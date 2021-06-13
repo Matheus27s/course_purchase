@@ -3,11 +3,11 @@ import 'package:mobx/mobx.dart';
 
 part 'user_session_store.g.dart';
 
-class UserSessionStore = _UserSessionStore with _$UserSessionStore;
+class UserSessionStore = _UserSessionStoreBase with _$UserSessionStore;
 
-abstract class _UserSessionStore with Store {
+abstract class _UserSessionStoreBase with Store {
   @observable
-  User user = new User();
+  User user = User();
 
   @action
   void setUserSession(User value) => user = value;

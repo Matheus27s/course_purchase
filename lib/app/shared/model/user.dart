@@ -8,7 +8,7 @@ class User {
   }
 
   set name(String value) {
-    _name = name;
+    _name = value;
   }
 
   String get email {
@@ -16,7 +16,7 @@ class User {
   }
 
   set email(String value) {
-    _email = email;
+    _email = value;
   }
 
   String get password {
@@ -24,6 +24,11 @@ class User {
   }
 
   set password(String value) {
-    _password = password;
+    _password = value;
   }
 }
+
+
+
+
+
