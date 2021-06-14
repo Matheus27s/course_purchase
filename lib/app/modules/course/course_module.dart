@@ -4,6 +4,8 @@ import 'package:dio/dio.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 import 'course_page.dart';
+import 'pages/course_details/courseDetails_page.dart';
+import 'pages/course_details/courseDetails_store.dart';
 import 'repository/course_repository.dart';
 
 class CourseModule extends Module {
@@ -11,10 +13,13 @@ class CourseModule extends Module {
   final List<Bind> binds = [
     Bind((i) => CourseRepository(Dio())),
     Bind((i) => CourseStore(i.get<UserSessionStore>(), i.get<CourseRepository>())),
+
+    Bind((i) => CourseDetailsStore()),
   ];
 
   @override
   final List<ModularRoute> routes = [
     ChildRoute('/', child: (_, args) => CoursePage()),
+    ChildRoute('pages/details', child: (_, args) => CourseDetailsPage()),
   ];
 }
