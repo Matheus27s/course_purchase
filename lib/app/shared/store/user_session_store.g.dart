@@ -20,13 +20,13 @@ mixin _$UserSessionStore on _UserSessionStoreBase, Store {
   final _$userAtom = Atom(name: '_UserSessionStoreBase.user');
 
   @override
-  User get user {
+  UserModel get user {
     _$userAtom.reportRead();
     return super.user;
   }
 
   @override
-  set user(User value) {
+  set user(UserModel value) {
     _$userAtom.reportWrite(value, super.user, () {
       super.user = value;
     });
@@ -36,7 +36,7 @@ mixin _$UserSessionStore on _UserSessionStoreBase, Store {
       ActionController(name: '_UserSessionStoreBase');
 
   @override
-  void setUserSession(User value) {
+  void setUserSession(UserModel value) {
     final _$actionInfo = _$_UserSessionStoreBaseActionController.startAction(
         name: '_UserSessionStoreBase.setUserSession');
     try {

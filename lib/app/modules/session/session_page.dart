@@ -22,11 +22,7 @@ class SessionPageState extends State<SessionPage> {
   Widget build(BuildContext context) {
     final List<String> errors = [];
 
-    String email = store.email.text;
-    String password = store.password.text;
-
     MediaQueryData queryData = MediaQuery.of(context);
-
     double getProportionateScreenHeight(double inputHeight) {
       double height = queryData.size.height;
       return (inputHeight / 812.0) * height;
@@ -84,8 +80,10 @@ class SessionPageState extends State<SessionPage> {
                       children: [
                         // Login
                         TextFormField(
+                          controller: store.email,
                           keyboardType: TextInputType.emailAddress,
-                          onSaved: (newValue) => email = newValue.toString(),
+                          onSaved: (newValue) =>
+                              store.email.text = newValue.toString(),
                           onChanged: (value) {
                             if (value.isNotEmpty) {
                               removeError(kEmailNullError);
@@ -118,8 +116,10 @@ class SessionPageState extends State<SessionPage> {
 
                         //Password
                         TextFormField(
+                          controller: store.password,
                           obscureText: true,
-                          onSaved: (newValue) => password = newValue.toString(),
+                          onSaved: (newValue) =>
+                              store.password.text = newValue.toString(),
                           onChanged: (value) {
                             if (value.isNotEmpty) {
                               removeError(kPassNullError);
@@ -159,6 +159,7 @@ class SessionPageState extends State<SessionPage> {
                     press: () {
                       if (store.validate()) {
                         store.signIn();
+                        Modular.to.pushNamed("/course");
                         KeyboardUtil.hideKeyboard(context);
                       }
                     },

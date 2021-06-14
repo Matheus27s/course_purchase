@@ -13,6 +13,17 @@ mixin _$SessionStore on _SessionStoreBase, Store {
       ActionController(name: '_SessionStoreBase');
 
   @override
+  bool validate() {
+    final _$actionInfo = _$_SessionStoreBaseActionController.startAction(
+        name: '_SessionStoreBase.validate');
+    try {
+      return super.validate();
+    } finally {
+      _$_SessionStoreBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
   void signIn() {
     final _$actionInfo = _$_SessionStoreBaseActionController.startAction(
         name: '_SessionStoreBase.signIn');

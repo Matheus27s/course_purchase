@@ -1,4 +1,4 @@
-class User {
+class UserModel {
   String _name = "";
   String _email = "";
   String _password = "";

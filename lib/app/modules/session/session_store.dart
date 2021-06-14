@@ -1,6 +1,7 @@
-import 'package:course_purchase/app/shared/model/user.dart';
+import 'package:course_purchase/app/shared/model/user_model.dart';
 import 'package:course_purchase/app/shared/store/user_session_store.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 import 'package:mobx/mobx.dart';
 
 part 'session_store.g.dart';
@@ -30,18 +31,11 @@ abstract class _SessionStoreBase with Store {
   @action
   void signIn() {
     if (email.text != "" && password.text != "") {
-      User user = User();
+      UserModel user = UserModel();
 
       user.email = email.text;
       user.password = password.text;
-
-      print(email.text);
-      print(password.text);
-
-      print(user.email);
-
       _userSessionStore.setUserSession(user);
-      //Modular.to.pushReplacementNamed("/");
     } else {
       print('Erro ao tentar logar');
     }
