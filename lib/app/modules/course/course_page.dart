@@ -33,7 +33,7 @@ class CoursePageState extends State<CoursePage> {
               print(current);
               return InkWell(
                 onTap: () {
-                  Modular.to.navigate('pages/details');
+                  Modular.to.pushNamed('pages/details', arguments: current);
                 },
                 child: Container(
                   margin: EdgeInsets.all(10),

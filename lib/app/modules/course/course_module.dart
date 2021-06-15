@@ -20,6 +20,6 @@ class CourseModule extends Module {
   @override
   final List<ModularRoute> routes = [
     ChildRoute('/', child: (_, args) => CoursePage()),
-    ChildRoute('pages/details', child: (_, args) => CourseDetailsPage()),
+    ChildRoute('pages/details', child: (_, args) => CourseDetailsPage(courseModel: args.data)),
   ];
 }
