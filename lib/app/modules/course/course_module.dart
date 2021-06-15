@@ -1,4 +1,5 @@
 import 'package:course_purchase/app/modules/course/course_store.dart';
+import 'package:course_purchase/app/shared/store/car_store/car_store.dart';
 import 'package:course_purchase/app/shared/store/user_session_store.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -13,8 +14,7 @@ class CourseModule extends Module {
   final List<Bind> binds = [
     Bind((i) => CourseRepository(Dio())),
     Bind((i) => CourseStore(i.get<UserSessionStore>(), i.get<CourseRepository>())),
-
-    Bind((i) => CourseDetailsStore()),
+    Bind((i) => CourseDetailsStore(i.get<CarStore>())),
   ];
 
   @override

@@ -1,4 +1,4 @@
-import 'package:course_purchase/app/shared/model/user_model.dart';
+import 'package:course_purchase/app/shared/model/user_model/user_model.dart';
 import 'package:mobx/mobx.dart';
 
 part 'user_session_store.g.dart';

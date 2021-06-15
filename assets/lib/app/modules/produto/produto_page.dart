@@ -1,44 +1,45 @@
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:course_purchase/app/modules/course/course_store.dart';
 import 'package:flutter/material.dart';
 
-class CoursePage extends StatefulWidget {
-  final String title;
-  const CoursePage({Key? key, this.title = 'CoursePage'}) : super(key: key);
+import 'produto_store.dart';
+
+class ProdutoPage extends StatefulWidget {
+  final String nomeDaLoja;
+  final String id;
+
+  const ProdutoPage({Key? key, required this.nomeDaLoja, required this.id}) : super(key: key);
   @override
-  CoursePageState createState() => CoursePageState();
+  _ProdutoPageState createState() => _ProdutoPageState();
 }
 
-class CoursePageState extends State<CoursePage> {
-  final CourseStore store = Modular.get();
+class _ProdutoPageState extends ModularState<ProdutoPage, ProdutoStore> {
+    final ProdutoStore store = Modular.get();
+
 
   @override
   Widget build(BuildContext context) {
-    print(store.isLogged);
-    print(store.courses);
-
     return Scaffold(
       appBar: AppBar(
-        title: Text("Cursos"),
+        title: Text(widget.nomeDaLoja),
       ),
       floatingActionButton: FloatingActionButton(
           onPressed: () {
-            Modular.to.pushNamed("/car");
+            Modular.to.pushNamed("/carrinho/vindo da compra");
           },
           child: Icon(Icons.shopping_cart, color: Colors.white)),
       body: Observer(
         builder: (_) {
           return GridView.builder(
-            itemCount: store.courses.length,
+            itemCount: store.produtos.length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2, childAspectRatio: .7),
             itemBuilder: (_, index) {
-              var current = store.courses[index];
+              var current = store.produtos[index];
               print(current);
               return InkWell(
                 onTap: () {
-                  Modular.to.pushNamed('pages/details', arguments: current);
+                  Modular.to.pushNamed('/detalhesProduto', arguments: current);
                 },
                 child: Container(
                   margin: EdgeInsets.all(10),
@@ -51,7 +52,7 @@ class CoursePageState extends State<CoursePage> {
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(10),
                             image: DecorationImage(
-                                image: NetworkImage("${current.image}"),
+                                image: NetworkImage("${current.imagem}"),
                                 fit: BoxFit.cover),
                           ),
                         ),
@@ -64,7 +65,7 @@ class CoursePageState extends State<CoursePage> {
                               children: [
                                 Expanded(
                                   child: Text(
-                                    current.name,
+                                    current.nome,
                                     style: TextStyle(
                                         fontSize: 20,
                                         fontWeight: FontWeight.bold),
@@ -76,14 +77,14 @@ class CoursePageState extends State<CoursePage> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
-                                  "R\$ ${current.price}",
+                                  "R\$ ${current.preco}",
                                   style: TextStyle(
                                     color: Colors.green,
                                     fontSize: 16,
                                   ),
                                 ),
                                 Text(
-                                  "R\$ ${current.price}",
+                                  "R\$ ${current.preco}",
                                   style: TextStyle(
                                     color: Colors.red[300],
                                     decoration: TextDecoration.lineThrough,
@@ -99,7 +100,7 @@ class CoursePageState extends State<CoursePage> {
                               children: [
                                 Expanded(
                                   child: Text(
-                                    "${current.price}",
+                                    "${current.descricao}",
                                     maxLines: 2,
                                     style: TextStyle(
                                       color: Colors.black87,

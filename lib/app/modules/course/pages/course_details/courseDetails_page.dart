@@ -71,7 +71,10 @@ class CourseDetailsPageState extends State<CourseDetailsPage> {
                           ),
                           child: DefaultButton(
                             text: "Adicionar ao Carrinho",
-                            press: () {},
+                            press: () {
+                              store.addCourseInCar(widget.courseModel);
+                              Modular.to.popAndPushNamed("/car");
+                            },
                           ),
                         ),
                       ),

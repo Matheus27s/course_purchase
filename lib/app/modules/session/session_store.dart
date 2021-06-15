@@ -1,7 +1,6 @@
-import 'package:course_purchase/app/shared/model/user_model.dart';
+import 'package:course_purchase/app/shared/model/user_model/user_model.dart';
 import 'package:course_purchase/app/shared/store/user_session_store.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_modular/flutter_modular.dart';
 import 'package:mobx/mobx.dart';
 
 part 'session_store.g.dart';
