@@ -15,5 +15,5 @@ abstract class _CarCourseListStoreBase with Store {
 
   @computed
   ObservableList<CarModel> get courseList =>
-      _carStore.courseInCar;
+      _carStore.coursesInCar;
 }

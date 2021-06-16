@@ -26,7 +26,7 @@ class HomeHeader extends StatelessWidget {
           SearchField(),
           IconBtnWithCounter(
             svgSrc: "assets/icons/Cart Icon.svg",
-            press: () => Modular.to.pushNamed('car'),
+            press: () => Modular.to.pushNamed('/car'),
           ),
         ],
       ),

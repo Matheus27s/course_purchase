@@ -54,8 +54,8 @@ class CoursePageState extends State<CoursePage> {
                       print(current);
                       return InkWell(
                         onTap: () {
-                          Modular.to.pushNamed('pages/details',
-                              arguments: current);
+                          Modular.to
+                              .pushNamed('pages/details', arguments: current);
                         },
                         child: Container(
                           margin: EdgeInsets.all(5),
@@ -96,7 +96,7 @@ class CoursePageState extends State<CoursePage> {
                                         Text(
                                           "${current.category}",
                                           style: TextStyle(
-                                            color: kPrimaryColor,
+                                            color: Colors.grey,
                                             fontSize: 12,
                                           ),
                                         ),
@@ -112,7 +112,8 @@ class CoursePageState extends State<CoursePage> {
                                             "R\$ ${current.price}",
                                             maxLines: 2,
                                             style: TextStyle(
-                                              color: Colors.green,
+                                              fontSize: 16,
+                                              color: kPrimaryColor,
                                             ),
                                           ),
                                         ),
