@@ -1,5 +1,6 @@
 import 'package:course_purchase/app/modules/components/default_button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class CheckoutCard extends StatelessWidget {
@@ -82,7 +83,9 @@ class CheckoutCard extends StatelessWidget {
                   width: getProportionateScreenWidth(190),
                   child: DefaultButton(
                     text: "Pagamento",
-                    press: () {},
+                    press: () {
+                      Modular.to.pushNamed("/payment");
+                    },
                   ),
                 ),
               ],

@@ -4,6 +4,7 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'app_widget.dart';
 import 'modules/car/car_module.dart';
 import 'modules/course/course_module.dart';
+import 'modules/payment/payment_module.dart';
 import 'modules/session/session_module.dart';
 import 'shared/store/user_session_store.dart';
 
@@ -19,6 +20,7 @@ class AppModule extends Module {
     ModuleRoute(Modular.initialRoute, module: SessionModule()),
     ModuleRoute('/course', module: CourseModule()),
     ModuleRoute('/car', module: CarModule()),
+    ModuleRoute('/payment', module: PaymentModule()),
   ];
 
   Widget get bootstrap => AppWidget();

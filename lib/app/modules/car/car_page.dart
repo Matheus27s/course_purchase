@@ -3,7 +3,6 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import '../../../constants.dart';
-import 'components/car_courses_list/cart_card.dart';
 import 'components/car_courses_list/check_out_card.dart';
 
 class CarPage extends StatefulWidget {

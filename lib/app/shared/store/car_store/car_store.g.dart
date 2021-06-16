@@ -16,6 +16,31 @@ mixin _$CarStore on _CarStoreBase, Store {
           Computed<double>(() => super.total, name: '_CarStoreBase.total'))
       .value;
 
+  final _$_CarStoreBaseActionController =
+      ActionController(name: '_CarStoreBase');
+
+  @override
+  void addCourseInCar(CourseModel courseModel) {
+    final _$actionInfo = _$_CarStoreBaseActionController.startAction(
+        name: '_CarStoreBase.addCourseInCar');
+    try {
+      return super.addCourseInCar(courseModel);
+    } finally {
+      _$_CarStoreBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void removeCourseInCar(CourseModel courseModel) {
+    final _$actionInfo = _$_CarStoreBaseActionController.startAction(
+        name: '_CarStoreBase.removeCourseInCar');
+    try {
+      return super.removeCourseInCar(courseModel);
+    } finally {
+      _$_CarStoreBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
   @override
   String toString() {
     return '''

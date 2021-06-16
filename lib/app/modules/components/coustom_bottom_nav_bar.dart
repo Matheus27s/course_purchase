@@ -57,6 +57,16 @@ class CustomBottomNavBar extends StatelessWidget {
                 onPressed: () =>
                     Modular.to.pushNamed('/car'),
               ),
+              IconButton(
+                icon: SvgPicture.asset(
+                  "assets/icons/Cash.svg",
+                  color: MenuState.profile == selectedMenu
+                      ? kPrimaryColor
+                      : inActiveIconColor,
+                ),
+                onPressed: () =>
+                    Modular.to.pushNamed('/payment'),
+              ),
             ],
           )),
     );

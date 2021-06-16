@@ -26,7 +26,7 @@ abstract class _CarStoreBase with Store {
     coursesInCar.removeWhere((element) => element.courseModel == courseModel);
   }
 
-  @observable
+  @computed
   double get total => coursesInCar
       .map((item) => double.parse(item.courseModel.price.replaceAll(',', '.')))
       .reduce((value, element) => value + element);
