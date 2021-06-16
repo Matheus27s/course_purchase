@@ -4,7 +4,6 @@ import 'package:course_purchase/constants.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter/material.dart';
 
-import 'components/color_dots.dart';
 import 'components/course_images.dart';
 import 'components/product_description.dart';
 import 'components/top_rounded_container.dart';
@@ -37,7 +36,7 @@ class CourseDetailsPageState extends State<CourseDetailsPage> {
     return Scaffold(
       backgroundColor: Colors.grey[300],
       appBar: AppBar(
-        title: Text("Detalhe do curso"),
+        title: Text("Detalhes do curso"),
       ),
       body: ListView(
         children: [

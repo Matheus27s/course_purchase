@@ -25,7 +25,7 @@ get _data => [
       ),
       CourseModel(
         2,
-        "Matemática intermediária",
+        "Matemática inter...",
         "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.",
         "https://spassodourado.com.br/wp-content/uploads/2015/01/default-placeholder.png",
         "Matemática básica",
@@ -33,7 +33,7 @@ get _data => [
       ),
       CourseModel(
         3,
-        "Matemática intermediária",
+        "Matemática inter...",
         "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.",
         "https://spassodourado.com.br/wp-content/uploads/2015/01/default-placeholder.png",
         "Matemática básica",
@@ -41,7 +41,7 @@ get _data => [
       ),
       CourseModel(
         4,
-        "Matemática intermediária",
+        "Matemática inter...",
         "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.",
         "https://spassodourado.com.br/wp-content/uploads/2015/01/default-placeholder.png",
         "Matemática básica",
@@ -49,7 +49,7 @@ get _data => [
       ),
       CourseModel(
         5,
-        "Matemática intermediária",
+        "Matemática inter...",
         "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.",
         "https://spassodourado.com.br/wp-content/uploads/2015/01/default-placeholder.png",
         "Matemática básica",
@@ -57,7 +57,7 @@ get _data => [
       ),
       CourseModel(
         6,
-        "Matemática intermediária",
+        "Matemática inter...",
         "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.",
         "https://spassodourado.com.br/wp-content/uploads/2015/01/default-placeholder.png",
         "Matemática básica",
@@ -65,7 +65,7 @@ get _data => [
       ),
       CourseModel(
         7,
-        "Matemática intermediária",
+        "Matemática inter...",
         "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.",
         "https://spassodourado.com.br/wp-content/uploads/2015/01/default-placeholder.png",
         "Matemática básica",
@@ -73,7 +73,7 @@ get _data => [
       ),
       CourseModel(
         8,
-        "Matemática intermediária",
+        "Matemática inter...",
         "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.",
         "https://spassodourado.com.br/wp-content/uploads/2015/01/default-placeholder.png",
         "Matemática básica",
@@ -81,7 +81,7 @@ get _data => [
       ),
       CourseModel(
         9,
-        "Matemática intermediária",
+        "Matemática inter...",
         "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.",
         "https://spassodourado.com.br/wp-content/uploads/2015/01/default-placeholder.png",
         "Matemática básica",
@@ -89,7 +89,7 @@ get _data => [
       ),
       CourseModel(
         10,
-        "Matemática intermediária",
+        "Matemática inter...",
         "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.",
         "https://spassodourado.com.br/wp-content/uploads/2015/01/default-placeholder.png",
         "Matemática básica",

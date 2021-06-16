@@ -34,12 +34,19 @@ class _ProductImagesState extends State<CourseImages> {
 
     return Column(
       children: [
+        SizedBox(height: getProportionateScreenWidth(24)),
         SizedBox(
           child: Container(
+            width: getProportionateScreenWidth(screenWidth - 16),
+            height: getProportionateScreenHeight(screenHeight),
+            margin: EdgeInsets.all(7),
             decoration: BoxDecoration(
-              color: Colors.redAccent,
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
+              image: DecorationImage(
+                  image: NetworkImage("${widget.course.image}"),
+                  fit: BoxFit.cover),
             ),
-            child: Image.network("${widget.course.image}"),
           ),
         ),
       ],
