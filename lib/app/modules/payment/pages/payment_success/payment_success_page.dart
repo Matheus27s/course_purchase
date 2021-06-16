@@ -1,3 +1,4 @@
+import 'package:course_purchase/app/modules/components/default_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
@@ -17,29 +18,52 @@ class _PaymentSuccessPageState extends State<PaymentSuccessPage> {
 
   @override
   Widget build(BuildContext context) {
+    MediaQueryData queryData = MediaQuery.of(context);
+
+    double screenHeight = queryData.size.height;
+    double screenwidth = queryData.size.width;
+
+    double getProportionateScreenWidth(double inputWidth) {
+      double width = queryData.size.width;
+      return (inputWidth / 375.0) * width;
+    }
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text(
-            "Pagamento Finalizado com sucesso ${store.model.name}!!!",
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 30),
+          SizedBox(height: screenHeight * 0.04),
+          Image.asset(
+            "assets/images/success.png",
+            height: screenHeight * 0.4, //40%
           ),
-          Container(
-            width: double.infinity,
-            child: ElevatedButton(
-              child: Text("Continuar Comprando"),
-              onPressed: () {
-                Modular.to.popUntil(ModalRoute.withName("/"));
+          SizedBox(height: screenHeight * 0.08),
+          Text(
+            "Compra efetuada com sucesso.",
+            style: TextStyle(
+              fontSize: getProportionateScreenWidth(20),
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+            ),
+          ),
+          Text(
+            "Obrigado pela preferência",
+            style: TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.normal,
+              color: Colors.black,
+            ),
+          ),
+          Spacer(),
+          SizedBox(
+            width: screenwidth * 0.6,
+            child: DefaultButton(
+              text: "Voltar",
+              press: () {
+                Modular.to.pushNamed('/course');
               },
             ),
           ),
+          Spacer(),
         ],
       ),
     );
