@@ -38,7 +38,7 @@ class CoursePageState extends State<CoursePage> {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              HomeHeader(),
+              HomeHeader(courseStore: store),
               SizedBox(height: getProportionateScreenWidth(10)),
               Observer(
                 builder: (_) {

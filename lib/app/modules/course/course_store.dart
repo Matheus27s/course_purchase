@@ -26,4 +26,9 @@ abstract class _CourseStoreBase with Store {
   Future init() async {
     courses = (await courseRepository.coursesList()).asObservable();
   }
+
+  @action
+  findCourse(course) {
+    courses = (courseRepository.coursesListLike(course: course)).asObservable();
+  }
 }

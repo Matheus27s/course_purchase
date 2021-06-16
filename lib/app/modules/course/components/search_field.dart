@@ -1,8 +1,12 @@
 import 'package:course_purchase/constants.dart';
 import 'package:flutter/material.dart';
 
+import '../course_store.dart';
+
 class SearchField extends StatelessWidget {
-  const SearchField({Key? key}) : super(key: key);
+  const SearchField({Key? key, required this.courseStore}) : super(key: key);
+
+  final CourseStore courseStore;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +26,7 @@ class SearchField extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
       ),
       child: TextField(
-        onChanged: (value) => print(value),
+        onChanged: (value) => courseStore.findCourse(value),
         decoration: InputDecoration(
             contentPadding: EdgeInsets.symmetric(
                 horizontal: getProportionateScreenWidth(20),

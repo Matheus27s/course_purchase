@@ -49,7 +49,7 @@ class SessionPageState extends State<SessionPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Sign In"),
+        title: Text("Login"),
       ),
       body: SafeArea(
         child: SizedBox(
@@ -62,17 +62,21 @@ class SessionPageState extends State<SessionPage> {
                 children: [
                   SizedBox(height: queryData.size.width * 0.04),
                   Text(
-                    "Welcome Back",
+                    "Course Purchase",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: getProportionateScreenWidth(28),
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(height: queryData.size.height * 0.04),
+                  SizedBox(height: queryData.size.height * 0.02),
                   Text(
-                    "Sign in with your email and password  \nor continue with social media",
-                    textAlign: TextAlign.center,
+                    "Faça o seu Login",
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                    ),
                   ),
                   SizedBox(height: queryData.size.height * 0.08),
                   Form(

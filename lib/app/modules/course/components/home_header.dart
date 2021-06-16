@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
+import '../course_store.dart';
 import 'icon_btn_with_counter.dart';
 import 'search_field.dart';
 
 class HomeHeader extends StatelessWidget {
-  const HomeHeader({
-    Key? key}) : super(key: key);
+  const HomeHeader({Key? key, required this.courseStore}) : super(key: key);
+
+  final CourseStore courseStore;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +25,7 @@ class HomeHeader extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          SearchField(),
+          SearchField(courseStore: courseStore),
           IconBtnWithCounter(
             svgSrc: "assets/icons/Cart Icon.svg",
             press: () => Modular.to.pushNamed('/car'),
