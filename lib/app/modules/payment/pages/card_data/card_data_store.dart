@@ -11,7 +11,6 @@ class CardDataStore = _CardDataStoreBase with _$CardDataStore;
 
 abstract class _CardDataStoreBase extends Disposable with Store {
   final PaymentStore _paymentStore;
-
   _CardDataStoreBase(this._paymentStore);
 
   @computed
@@ -25,7 +24,18 @@ abstract class _CardDataStoreBase extends Disposable with Store {
     model.cardModel.number = cardInput.text;
     model.cardModel.cvv = cvvInput.text;
 
-    Modular.to.pushNamed("success", arguments: model);
+    print(model.cardModel.number);
+    print(model.cardModel.cvv);
+
+    print(model.name);
+
+    if (model.cardModel.number != "" &&
+        model.cardModel.cvv != "" &&
+        model.name != "") {
+      Modular.to.pushNamed("success", arguments: model);
+    } else {
+      print("Todos os dados precisam ser inseridos");
+    }
   }
 
   @override

@@ -38,17 +38,6 @@ class PaymentPageState extends State<PaymentPage> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
-              "Vamos Precisar de mais Alguns dados!",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            TextFormField(
-              decoration: InputDecoration(labelText: "Data"),
-            ),
             Column(children: [
               Text(
                 "Escolha a forma de pagamento",

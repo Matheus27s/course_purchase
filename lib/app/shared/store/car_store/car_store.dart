@@ -6,14 +6,14 @@ part 'car_store.g.dart';
 class CarStore = _CarStoreBase with _$CarStore;
 
 abstract class _CarStoreBase with Store {
-  var coursesInCar = ObservableList<CarModel>();
+  final coursesInCar = ObservableList<CarModel>();
 
   @action
   void addCourseInCar(CourseModel courseModel) {
     var index = coursesInCar.indexWhere((element) => element.courseModel.id == courseModel.id);
 
     if (index >= 0) {
-      print('Esse item já existena lista');
+      print('Esse item já existe na lista');
       return;
 
     } else {
@@ -24,6 +24,11 @@ abstract class _CarStoreBase with Store {
   @action
   void removeCourseInCar(CourseModel courseModel) {
     coursesInCar.removeWhere((element) => element.courseModel == courseModel);
+  }
+
+  @action
+  int itemCount() {
+    return coursesInCar.length;
   }
 
   @computed

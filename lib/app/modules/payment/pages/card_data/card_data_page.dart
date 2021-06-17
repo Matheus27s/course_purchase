@@ -1,5 +1,6 @@
 import 'package:course_purchase/app/modules/components/default_button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'card_data_store.dart';
 
@@ -37,12 +38,23 @@ class _CardDataPageState extends State<CardDataPage> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 TextFormField(
+                  controller: store.cardInput,
+                  keyboardType: TextInputType.number,
+                  inputFormatters: [
+                    new LengthLimitingTextInputFormatter(16),
+                  ],
                   decoration: InputDecoration(labelText: "Cartao"),
                 ),
                 SizedBox(height: getProportionateScreenHeight(30)),
                 TextFormField(
+                  controller: store.cvvInput,
+                  keyboardType: TextInputType.number,
+                  inputFormatters: [
+                    new LengthLimitingTextInputFormatter(3),
+                  ],
                   decoration: InputDecoration(labelText: "CVV"),
                 ),
+                SizedBox(height: getProportionateScreenHeight(30)),
               ],
             ),
           ),
