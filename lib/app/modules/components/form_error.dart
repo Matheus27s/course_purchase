@@ -8,30 +8,23 @@ class FormError extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    MediaQueryData queryData = MediaQuery.of(context);
-
-    double getProportionateScreenWidth(double inputWidth) {
-      double width = queryData.size.width;
-      return (inputWidth / 375.0) * width;
-    }
-
 
     return Column(
       children: List.generate(
-          errors.length, (index) => formErrorText(errors[index], getProportionateScreenWidth)),
+          errors.length, (index) => formErrorText(errors[index])),
     );
   }
 
-  Row formErrorText(String error, screenWidth) {
+  Row formErrorText(String error) {
     return Row(
       children: [
         SvgPicture.asset(
           "assets/icons/Error.svg",
-          height: screenWidth(14),
-          width: screenWidth(14),
+          height: 14,
+          width: 14,
         ),
         SizedBox(
-          width: screenWidth(10),
+          width: 10,
         ),
         Text(error),
       ],
