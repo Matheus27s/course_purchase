@@ -1,4 +1,4 @@
-# course_purchase
+# course purchase
 
 A new Flutter project.
 
