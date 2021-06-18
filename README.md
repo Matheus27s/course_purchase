@@ -1,16 +1,20 @@
-# course purchase
+# 🛒 Course Purchase
 
-A new Flutter project.
+Projeto venda de curso
 
-## Getting Started
+Este projeto tem foco na venda de curso online abordando o fluxo de carrinho de comprar e login do usuário.
 
-This project is a starting point for a Flutter application.
+### Instruções de instalação
 
-A few resources to get you started if this is your first Flutter project:
+1 - git clone [`https://github.com/Matheus27s/course_purchase.git`](https://github.com/Matheus27s/course_purchase.git)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+2 - no projeto rode: `slidy run mobb`
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Telas
+  <div>
+  <img src="https://user-images.githubusercontent.com/60816110/122488441-d8e64f80-cfb3-11eb-90a8-fec1c80df755.png" width="250" title="hover text">
+  <img src="https://user-images.githubusercontent.com/60816110/122488457-df74c700-cfb3-11eb-98c6-5d98683c9200.png" width="250" title="hover text">
+  <img src="https://user-images.githubusercontent.com/60816110/122488454-dedc3080-cfb3-11eb-9c59-858b2efd9dbe.png" width="250" title="hover text">
+  <img src="https://user-images.githubusercontent.com/60816110/122488451-de439a00-cfb3-11eb-9b5b-89aa771865af.png" width="250" title="hover text">
+  <img src="https://user-images.githubusercontent.com/60816110/122488449-ddab0380-cfb3-11eb-9b9c-8b9568d4df99.png" width="250" title="hover text">
+</div>
