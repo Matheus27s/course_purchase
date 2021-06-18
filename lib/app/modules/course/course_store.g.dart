@@ -39,6 +39,20 @@ mixin _$CourseStore on _CourseStoreBase, Store {
     return _$initAsyncAction.run(() => super.init());
   }
 
+  final _$_CourseStoreBaseActionController =
+      ActionController(name: '_CourseStoreBase');
+
+  @override
+  dynamic findCourse(dynamic course) {
+    final _$actionInfo = _$_CourseStoreBaseActionController.startAction(
+        name: '_CourseStoreBase.findCourse');
+    try {
+      return super.findCourse(course);
+    } finally {
+      _$_CourseStoreBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
   @override
   String toString() {
     return '''

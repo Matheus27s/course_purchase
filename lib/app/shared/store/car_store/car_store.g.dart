@@ -42,6 +42,17 @@ mixin _$CarStore on _CarStoreBase, Store {
   }
 
   @override
+  int itemCount() {
+    final _$actionInfo = _$_CarStoreBaseActionController.startAction(
+        name: '_CarStoreBase.itemCount');
+    try {
+      return super.itemCount();
+    } finally {
+      _$_CarStoreBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
   String toString() {
     return '''
 total: ${total}
