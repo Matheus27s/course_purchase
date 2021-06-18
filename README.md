@@ -4,11 +4,15 @@ Projeto venda de curso
 
 Este projeto tem foco na venda de curso online abordando o fluxo de carrinho de comprar e login do usuário.
 
+### Dependências
+- flutter_modular
+- mobb
+- flutter_svg
+- Dio
+
 ### Instruções de instalação
-
-1 - git clone [`https://github.com/Matheus27s/course_purchase.git`](https://github.com/Matheus27s/course_purchase.git)
-
-2 - no projeto rode: `slidy run mobb`
+- git clone [`https://github.com/Matheus27s/course_purchase.git`](https://github.com/Matheus27s/course_purchase.git)
+- no projeto rode: `slidy run mobb`
 
 ### Telas
   <div>
