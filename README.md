@@ -11,8 +11,8 @@ Este projeto tem foco na venda de curso online abordando o fluxo de carrinho de 
 - Dio
 
 ### Instruções de instalação
-- git clone [`https://github.com/Matheus27s/course_purchase.git`](https://github.com/Matheus27s/course_purchase.git)
-- no projeto rode: `slidy run mobb`
+- no terminal 'run': `git clone https://github.com/Matheus27s/course_purchase.git`
+- no projeto 'run': `slidy run mobb`
 
 ### Telas
   <div>
