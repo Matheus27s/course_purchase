@@ -31,7 +31,7 @@ class Body extends StatelessWidget {
               children: [
                 SizedBox(height: screenHeight * 0.04),
                 Text(
-                  "Welcome Back",
+                  "Course Purchase",
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: getProportionateScreenWidth(28),
@@ -39,7 +39,7 @@ class Body extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "Sign in with your email and password  \nor continue with social media",
+                  "Faça login com seu e-mail e senha",
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(height: screenHeight * 0.08),

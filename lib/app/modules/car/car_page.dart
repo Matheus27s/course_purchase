@@ -77,7 +77,7 @@ class CarPageState extends State<CarPage> {
                             Text.rich(
                               TextSpan(
                                 text:
-                                    "\$${store.coursesInCar[index].courseModel.price}",
+                                    "R\$ ${store.coursesInCar[index].courseModel.price}",
                                 style: TextStyle(
                                   fontWeight: FontWeight.w600,
                                   color: kPrimaryColor,

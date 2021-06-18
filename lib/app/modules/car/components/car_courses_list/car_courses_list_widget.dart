@@ -41,7 +41,7 @@ class _CarCoursesListWidgetState extends State<CarCoursesListWidget> {
                       ),
                       Observer(builder: (BuildContext context) {
                         return Text(
-                          "${current.courseModel.price}",
+                          "R\$ ${current.courseModel.price}",
                           style: TextStyle(
                             fontWeight: FontWeight.normal,
                             color: Colors.grey,
